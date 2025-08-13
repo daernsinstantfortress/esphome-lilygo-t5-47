@@ -49,7 +49,7 @@ async def to_code(config):
         )
         cg.add(var.set_writer(lambda_))
 
-    cg.add_library("https://github.com/ashald/platformio-epdiy-monochrome.git", None)
+    cg.add_library("https://github.com/daernsinstantfortress/platformio-epdiy-monochrome.git", None)
 
     cg.add_build_flag("-DCONFIG_EPD_DISPLAY_TYPE_ED047TC1")
     cg.add_build_flag("-DCONFIG_EPD_BOARD_REVISION_LILYGO_T5_47")
